@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ies.luisvives.org.interfazdinamicafx.MainController">
+   <children>
+      <VBox fx:id="menu" fillWidth="false" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" style="-fx-background-color: grey;" translateX="-200.0" StackPane.alignment="CENTER_LEFT">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="show_panel_1_button" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#onClickLayout1Button" text="Ver Panel 1" />
+                        <Button fx:id="show_panel_2_button" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#onClickLayout2Button" text="Ver Panel 2" />
+                     </children>
+                  </VBox>
+                  <Button fx:id="menu_button" minWidth="-Infinity" mnemonicParsing="false" onAction="#onClickMenuButton" text="Menu" translateX="100.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox>
+         <children>
+            <StackPane minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
+               <children>
+                  <fx:include fx:id="view_1" disable="false" source="view_1.fxml" />
+                  <fx:include fx:id="view_2" disable="true" source="view_2.fxml" />
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </StackPane>
+         </children>
+      </HBox>
+   </children>
+</StackPane>
